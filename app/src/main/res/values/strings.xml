@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Focus Guard</string>
+
+    <!-- Accessibility service metadata shown in Settings → Accessibility -->
+    <string name="accessibility_service_label">Focus Guard — App Blocker</string>
+    <string name="accessibility_service_description">Focus Guard uses the Accessibility Service to detect when you open a distracting app during a focus session and bring up a reflection screen. It does not read or store any screen content.</string>
+</resources>

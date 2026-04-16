@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme: dark, no action bar -->
+    <style name="Theme.FocusGuard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_start</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Full-screen blocker theme for InterruptionActivity -->
+    <style name="Theme.FocusGuard.Blocker" parent="Theme.FocusGuard">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/bg_blocker</item>
+        <item name="android:statusBarColor">@color/bg_blocker</item>
+        <item name="android:navigationBarColor">@color/bg_blocker</item>
+    </style>
+
+</resources>

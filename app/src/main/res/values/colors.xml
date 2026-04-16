@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background -->
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="bg_blocker">#150505</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Brand / accent -->
+    <color name="accent">#7C5CFC</color>
+
+    <!-- Action colors -->
+    <color name="green_start">#2E7D32</color>
+    <color name="orange_action">#E65100</color>
+    <color name="red_stop">#B71C1C</color>
+
+    <!-- Button secondary (muted dark) -->
+    <color name="btn_secondary">#2C2C2C</color>
+
+    <!-- Warning banner -->
+    <color name="warning_bg">#33FF8C00</color>
+    <color name="warning_border">#FF8C00</color>
+    <color name="warning_text">#FFB74D</color>
+
+    <!-- Material theme required colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+</resources>
