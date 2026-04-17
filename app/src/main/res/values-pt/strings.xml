@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Focus Guard</string>
+
+    <!-- Accessibility service metadata shown in Settings → Accessibility -->
+    <string name="accessibility_service_label">Focus Guard — Bloqueador de Apps</string>
+    <string name="accessibility_service_description">O Focus Guard usa o Serviço de Acessibilidade para detectar quando você abre um aplicativo distrator durante uma sessão de foco e exibe uma tela de reflexão. Ele não lê nem armazena nenhum conteúdo da tela.</string>
+
+    <!-- Main screen -->
+    <string name="tagline">Bloqueie distrações. Domine seu tempo.</string>
+    <string name="accessibility_warning_title">⚠️  Ação Necessária</string>
+    <string name="accessibility_warning_body">Ative o Serviço de Acessibilidade para que o Focus Guard possa interceptar outros aplicativos.</string>
+    <string name="status_idle">Defina seu tempo e comece</string>
+    <string name="status_active">Sessão ativa — mantenha o foco!</string>
+    <string name="label_duration">Duração do foco (minutos, máx. 240)</string>
+    <string name="btn_start_focus">Iniciar Foco</string>
+    <string name="btn_stop_session">Parar Sessão</string>
+    <string name="btn_enable_accessibility">⚙️ Ativar Serviço de Acessibilidade</string>
+    <string name="btn_accessibility_enabled">✅ Acessibilidade Ativada</string>
+
+    <!-- Toasts -->
+    <string name="toast_find_accessibility">Encontre \"Focus Guard\" na lista e ative-o</string>
+    <string name="toast_enable_accessibility_first">Ative o Serviço de Acessibilidade primeiro para que o Focus Guard possa bloquear aplicativos</string>
+    <string name="toast_session_started">Sessão de foco iniciada! Mantenha o foco 💪</string>
+
+    <!-- Interruption screen -->
+    <string name="question_break_goal">Você realmente quer abandonar seu objetivo?\n\nO que você está prestes a fazer realmente vale a pena?</string>
+    <string name="question_great_choice">Ótima escolha!\nO que você gostaria de fazer?</string>
+    <string name="btn_no_stay">Não — Manter o Foco! 💪</string>
+    <string name="btn_yes_unlock">Sim, me deixe entrar</string>
+    <string name="btn_restart_clock">🔄  Reiniciar o Cronômetro</string>
+    <string name="btn_stay_clock">⏱️  Manter Tempo Atual</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Focus Guard — Sessão Ativa</string>
+    <string name="notification_text">Restante: %s</string>
+    <string name="notification_action_stop">Parar</string>
+    <string name="notification_channel_name">Temporizador do Focus Guard</string>
+    <string name="notification_channel_description">Exibe o tempo restante da sessão de foco</string>
+</resources>

@@ -47,8 +47,7 @@ class InterruptionActivity : AppCompatActivity() {
     /** Phase 1 — ask the user if they really want to break focus. */
     private fun showMainQuestion() {
         binding.tvEmoji.text = "⛔"
-        binding.tvQuestion.text =
-            "Do you really want to break your goal?\n\nIs what you're about to do really worth it?"
+        binding.tvQuestion.text = getString(R.string.question_break_goal)
 
         binding.layoutMainButtons.visibility = View.VISIBLE
         binding.layoutSecondaryButtons.visibility = View.GONE
@@ -60,7 +59,7 @@ class InterruptionActivity : AppCompatActivity() {
     /** Phase 2 — user said No; ask whether to restart or keep the clock. */
     private fun showSecondaryOptions() {
         binding.tvEmoji.text = "💪"
-        binding.tvQuestion.text = "Great choice!\nWhat would you like to do?"
+        binding.tvQuestion.text = getString(R.string.question_great_choice)
 
         binding.layoutMainButtons.visibility = View.GONE
         binding.layoutSecondaryButtons.visibility = View.VISIBLE

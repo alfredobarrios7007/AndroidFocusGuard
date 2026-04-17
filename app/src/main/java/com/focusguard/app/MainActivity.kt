@@ -77,11 +77,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnEnableAccessibility.setOnClickListener {
             startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
-            Toast.makeText(
-                this,
-                "Find \"Focus Guard\" in the list and enable it",
-                Toast.LENGTH_LONG
-            ).show()
+            Toast.makeText(this, R.string.toast_find_accessibility, Toast.LENGTH_LONG).show()
         }
     }
 
@@ -91,11 +87,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startSession() {
         if (!isAccessibilityServiceEnabled()) {
-            Toast.makeText(
-                this,
-                "Enable the Accessibility Service first so Focus Guard can block apps",
-                Toast.LENGTH_LONG
-            ).show()
+            Toast.makeText(this, R.string.toast_enable_accessibility_first, Toast.LENGTH_LONG).show()
             startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
             return
         }
@@ -107,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         }
         startForegroundService(intent)
         refreshUI()
-        Toast.makeText(this, "Focus session started! Stay locked in 💪", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, R.string.toast_session_started, Toast.LENGTH_SHORT).show()
     }
 
     private fun stopSession() {
@@ -131,14 +123,15 @@ class MainActivity : AppCompatActivity() {
 
         // Accessibility status button label
         binding.btnEnableAccessibility.text =
-            if (accessibilityOk) "✅ Accessibility Enabled" else "⚙️ Enable Accessibility Service"
+            if (accessibilityOk) getString(R.string.btn_accessibility_enabled)
+            else getString(R.string.btn_enable_accessibility)
         binding.btnEnableAccessibility.isEnabled = !accessibilityOk
 
         if (active) {
-            binding.btnStartStop.text = "Stop Session"
+            binding.btnStartStop.text = getString(R.string.btn_stop_session)
             binding.btnStartStop.setBackgroundColor(getColor(android.R.color.holo_red_dark))
             binding.numberPickerMinutes.isEnabled = false
-            binding.tvStatus.text = "Session active — stay focused!"
+            binding.tvStatus.text = getString(R.string.status_active)
             updateTimerDisplay(focusStateManager.getRemainingMillis())
         } else {
             onSessionEnded()
@@ -146,11 +139,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onSessionEnded() {
-        binding.btnStartStop.text = "Start Focus"
+        binding.btnStartStop.text = getString(R.string.btn_start_focus)
         binding.btnStartStop.setBackgroundColor(getColor(R.color.green_start))
         binding.numberPickerMinutes.isEnabled = true
         binding.tvTimer.text = "00:00"
-        binding.tvStatus.text = "Set your time and start"
+        binding.tvStatus.text = getString(R.string.status_idle)
     }
 
     private fun updateTimerDisplay(remainingMillis: Long) {

@@ -4,4 +4,36 @@
     <!-- Accessibility service metadata shown in Settings → Accessibility -->
     <string name="accessibility_service_label">Focus Guard — App Blocker</string>
     <string name="accessibility_service_description">Focus Guard uses the Accessibility Service to detect when you open a distracting app during a focus session and bring up a reflection screen. It does not read or store any screen content.</string>
+
+    <!-- Main screen -->
+    <string name="tagline">Block distractions. Own your time.</string>
+    <string name="accessibility_warning_title">⚠️  Action Required</string>
+    <string name="accessibility_warning_body">Enable the Accessibility Service so Focus Guard can intercept other apps.</string>
+    <string name="status_idle">Set your time and start</string>
+    <string name="status_active">Session active — stay focused!</string>
+    <string name="label_duration">Focus duration (minutes, max 240)</string>
+    <string name="btn_start_focus">Start Focus</string>
+    <string name="btn_stop_session">Stop Session</string>
+    <string name="btn_enable_accessibility">⚙️ Enable Accessibility Service</string>
+    <string name="btn_accessibility_enabled">✅ Accessibility Enabled</string>
+
+    <!-- Toasts -->
+    <string name="toast_find_accessibility">Find \"Focus Guard\" in the list and enable it</string>
+    <string name="toast_enable_accessibility_first">Enable the Accessibility Service first so Focus Guard can block apps</string>
+    <string name="toast_session_started">Focus session started! Stay locked in 💪</string>
+
+    <!-- Interruption screen -->
+    <string name="question_break_goal">Do you really want to break your goal?\n\nIs what you\'re about to do really worth it?</string>
+    <string name="question_great_choice">Great choice!\nWhat would you like to do?</string>
+    <string name="btn_no_stay">No — Stay Focused! 💪</string>
+    <string name="btn_yes_unlock">Yes, let me in</string>
+    <string name="btn_restart_clock">🔄  Restart the Clock</string>
+    <string name="btn_stay_clock">⏱️  Keep Current Time</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Focus Guard — Session Active</string>
+    <string name="notification_text">Remaining: %s</string>
+    <string name="notification_action_stop">Stop</string>
+    <string name="notification_channel_name">Focus Guard Timer</string>
+    <string name="notification_channel_description">Displays remaining focus session time</string>
 </resources>

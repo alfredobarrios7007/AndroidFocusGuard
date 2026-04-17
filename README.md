@@ -27,6 +27,7 @@ That single pause is often enough to make you reconsider.
   - **Keep the current time** — continue where you left off
   - **Unlock** — temporarily disable blocking (you made a conscious choice)
 - Persistent **foreground notification** shows remaining time at all times
+- **Multi-language support** — English, Spanish, French, and Portuguese; follows the device locale automatically
 - Works across all major Android OEMs (Samsung, Xiaomi, OnePlus, Motorola, etc.)
 
 ---
@@ -100,6 +101,21 @@ InterruptionActivity
       │
       └── "Yes" ──► FocusStateManager.setUnlocked(true) ──► finish()
 ```
+
+---
+
+## Localization
+
+All user-visible strings live in `res/values/strings.xml`. The app ships with translations for:
+
+| Locale | Folder |
+|--------|--------|
+| English (default) | `res/values/` |
+| Spanish | `res/values-es/` |
+| French | `res/values-fr/` |
+| Portuguese | `res/values-pt/` |
+
+Android selects the right strings automatically based on the device language — no code changes required. To add another language, create a new `res/values-<locale>/strings.xml` file and translate all keys from the default `strings.xml`.
 
 ---
 

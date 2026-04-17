@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Focus Guard"
+            android:text="@string/app_name"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Block distractions. Own your time."
+            android:text="@string/tagline"
             android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="4dp"
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="⚠️  Action Required"
+                android:text="@string/accessibility_warning_title"
                 android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/warning_text" />
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enable the Accessibility Service so Focus Guard can intercept other apps."
+                android:text="@string/accessibility_warning_body"
                 android:textSize="12sp"
                 android:textColor="@color/warning_text"
                 android:layout_marginTop="4dp" />
@@ -83,7 +83,7 @@
             android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Set your time and start"
+            android:text="@string/status_idle"
             android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:layout_marginBottom="32dp" />
@@ -92,7 +92,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Focus duration (minutes, max 240)"
+            android:text="@string/label_duration"
             android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:layout_marginBottom="8dp" />
@@ -110,7 +110,7 @@
             android:id="@+id/btnStartStop"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Start Focus"
+            android:text="@string/btn_start_focus"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -122,7 +122,7 @@
             android:id="@+id/btnEnableAccessibility"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⚙️ Enable Accessibility Service"
+            android:text="@string/btn_enable_accessibility"
             android:textSize="14sp"
             android:textColor="@color/white"
             android:backgroundTint="@color/orange_action"

@@ -1,0 +1,209 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.focusguard.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:5:5-77
+12-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:5:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+13-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:6:5-89
+13-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:6:22-86
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:7:5-77
+14-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:8:5-81
+15-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:8:22-78
+16
+17    <permission
+17-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.focusguard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.focusguard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:10:5-65:19
+24        android:allowBackup="true"
+24-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.12.0] C:\Users\alfre\.gradle\caches\transforms-3\c8a4ceab6a6e88d61d161e3f0451f51c\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:12:9-43
+29        android:label="@string/app_name"
+29-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:13:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:15:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.FocusGuard" >
+33-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:16:9-48
+34
+35        <!-- Main Activity -->
+36        <activity
+36-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:19:9-27:20
+37            android:name="com.focusguard.app.MainActivity"
+37-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:20:13-41
+38            android:exported="true"
+38-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:21:13-36
+39            android:windowSoftInputMode="adjustResize" >
+39-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:22:13-55
+40            <intent-filter>
+40-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:23:13-26:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:24:17-69
+41-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:24:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:25:17-77
+43-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:25:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <!-- Interruption / Block Screen Activity -->
+48        <activity
+48-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:30:9-37:63
+49            android:name="com.focusguard.app.InterruptionActivity"
+49-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:31:13-49
+50            android:excludeFromRecents="true"
+50-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:34:13-46
+51            android:exported="false"
+51-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:32:13-37
+52            android:launchMode="singleInstance"
+52-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:33:13-48
+53            android:showOnLockScreen="true"
+53-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:35:13-44
+54            android:theme="@style/Theme.FocusGuard.Blocker"
+54-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:37:13-60
+55            android:turnScreenOn="true" />
+55-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:36:13-40
+56
+57        <!-- Foreground Timer Service -->
+58        <service
+58-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:40:9-48:19
+59            android:name="com.focusguard.app.FocusTimerService"
+59-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:41:13-46
+60            android:exported="false"
+60-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:42:13-37
+61            android:foregroundServiceType="specialUse" >
+61-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:43:13-55
+62
+63            <!-- Required for specialUse foreground service type on Android 14+ -->
+64            <property
+64-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:45:13-47:83
+65                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+65-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:46:17-76
+66                android:value="Focus countdown timer for productivity sessions" />
+66-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:47:17-80
+67        </service>
+68
+69        <!-- Accessibility Service for App Blocking -->
+70        <service
+70-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:51:9-63:19
+71            android:name="com.focusguard.app.AppBlockerAccessibilityService"
+71-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:52:13-59
+72            android:description="@string/accessibility_service_description"
+72-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:56:13-76
+73            android:exported="true"
+73-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:53:13-36
+74            android:label="@string/accessibility_service_label"
+74-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:55:13-64
+75            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+75-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:54:13-79
+76            <intent-filter>
+76-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:57:13-59:29
+77                <action android:name="android.accessibilityservice.AccessibilityService" />
+77-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:58:17-92
+77-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:58:25-89
+78            </intent-filter>
+79
+80            <meta-data
+80-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:60:13-62:72
+81                android:name="android.accessibilityservice"
+81-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:61:17-60
+82                android:resource="@xml/accessibility_service_config" />
+82-->C:\source\repos\AndroidFocusGuard\app\src\main\AndroidManifest.xml:62:17-69
+83        </service>
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.focusguard.app.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alfre\.gradle\caches\transforms-3\56790c98da367544823fdafd5ec28fdb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alfre\.gradle\caches\transforms-3\197e50ec049d2deac5c463a45e23d1b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alfre\.gradle\caches\transforms-3\197e50ec049d2deac5c463a45e23d1b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alfre\.gradle\caches\transforms-3\197e50ec049d2deac5c463a45e23d1b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+97                android:value="androidx.startup" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+98        </provider>
+99
+100        <receiver
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+101            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+102            android:directBootAware="false"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+103            android:enabled="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+104            android:exported="true"
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+105            android:permission="android.permission.DUMP" >
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+107                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+110                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+113                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+116                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alfre\.gradle\caches\transforms-3\4c0faf58a3078c1c7f96b387c785c3f7\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+117            </intent-filter>
+118        </receiver>
+119    </application>
+120
+121</manifest>

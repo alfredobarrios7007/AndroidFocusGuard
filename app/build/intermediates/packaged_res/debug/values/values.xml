@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#7C5CFC</color>
+    <color name="bg_blocker">#150505</color>
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="black">#FF000000</color>
+    <color name="btn_secondary">#2C2C2C</color>
+    <color name="green_start">#2E7D32</color>
+    <color name="orange_action">#E65100</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red_stop">#B71C1C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="warning_bg">#33FF8C00</color>
+    <color name="warning_border">#FF8C00</color>
+    <color name="warning_text">#FFB74D</color>
+    <color name="white">#FFFFFF</color>
+    <string name="accessibility_service_description">Focus Guard uses the Accessibility Service to detect when you open a distracting app during a focus session and bring up a reflection screen. It does not read or store any screen content.</string>
+    <string name="accessibility_service_label">Focus Guard — App Blocker</string>
+    <string name="app_name">Focus Guard</string>
+    <style name="Theme.FocusGuard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_start</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+    <style name="Theme.FocusGuard.Blocker" parent="Theme.FocusGuard">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/bg_blocker</item>
+        <item name="android:statusBarColor">@color/bg_blocker</item>
+        <item name="android:navigationBarColor">@color/bg_blocker</item>
+    </style>
+</resources>

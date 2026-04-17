@@ -124,11 +124,11 @@ class FocusTimerService : Service() {
         )
 
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Focus Guard — Session Active")
-            .setContentText("Remaining: ${formatTime(remainingMillis)}")
+            .setContentTitle(getString(R.string.notification_title))
+            .setContentText(getString(R.string.notification_text, formatTime(remainingMillis)))
             .setSmallIcon(android.R.drawable.ic_lock_lock)
             .setContentIntent(pendingIntent)
-            .addAction(android.R.drawable.ic_delete, "Stop", stopPendingIntent)
+            .addAction(android.R.drawable.ic_delete, getString(R.string.notification_action_stop), stopPendingIntent)
             .setOngoing(true)
             .setPriority(NotificationCompat.PRIORITY_LOW)
             .setSilent(true)
@@ -143,10 +143,10 @@ class FocusTimerService : Service() {
     private fun createNotificationChannel() {
         val channel = NotificationChannel(
             CHANNEL_ID,
-            "Focus Guard Timer",
+            getString(R.string.notification_channel_name),
             NotificationManager.IMPORTANCE_LOW
         ).apply {
-            description = "Displays remaining focus session time"
+            description = getString(R.string.notification_channel_description)
             setShowBadge(false)
         }
         getSystemService(NotificationManager::class.java).createNotificationChannel(channel)

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Focus Guard</string>
+
+    <!-- Accessibility service metadata shown in Settings → Accessibility -->
+    <string name="accessibility_service_label">Focus Guard — Bloqueur d\'Applications</string>
+    <string name="accessibility_service_description">Focus Guard utilise le Service d\'Accessibilité pour détecter quand vous ouvrez une application distrayante pendant une session de concentration et affiche un écran de réflexion. Il ne lit ni ne stocke aucun contenu d\'écran.</string>
+
+    <!-- Main screen -->
+    <string name="tagline">Bloquez les distractions. Maîtrisez votre temps.</string>
+    <string name="accessibility_warning_title">⚠️  Action Requise</string>
+    <string name="accessibility_warning_body">Activez le Service d\'Accessibilité pour que Focus Guard puisse intercepter les autres applications.</string>
+    <string name="status_idle">Définissez votre temps et commencez</string>
+    <string name="status_active">Session active — restez concentré !</string>
+    <string name="label_duration">Durée de concentration (minutes, max 240)</string>
+    <string name="btn_start_focus">Démarrer la Concentration</string>
+    <string name="btn_stop_session">Arrêter la Session</string>
+    <string name="btn_enable_accessibility">⚙️ Activer le Service d\'Accessibilité</string>
+    <string name="btn_accessibility_enabled">✅ Accessibilité Activée</string>
+
+    <!-- Toasts -->
+    <string name="toast_find_accessibility">Trouvez « Focus Guard » dans la liste et activez-le</string>
+    <string name="toast_enable_accessibility_first">Activez d\'abord le Service d\'Accessibilité pour que Focus Guard puisse bloquer les applications</string>
+    <string name="toast_session_started">Session de concentration démarrée ! Restez focalisé 💪</string>
+
+    <!-- Interruption screen -->
+    <string name="question_break_goal">Voulez-vous vraiment abandonner votre objectif ?\n\nCe que vous êtes sur le point de faire en vaut-il vraiment la peine ?</string>
+    <string name="question_great_choice">Excellent choix !\nQue souhaitez-vous faire ?</string>
+    <string name="btn_no_stay">Non — Rester Concentré ! 💪</string>
+    <string name="btn_yes_unlock">Oui, laissez-moi entrer</string>
+    <string name="btn_restart_clock">🔄  Redémarrer le Chrono</string>
+    <string name="btn_stay_clock">⏱️  Garder le Temps Actuel</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Focus Guard — Session Active</string>
+    <string name="notification_text">Restant : %s</string>
+    <string name="notification_action_stop">Arrêter</string>
+    <string name="notification_channel_name">Minuterie Focus Guard</string>
+    <string name="notification_channel_description">Affiche le temps restant de la session de concentration</string>
+</resources>

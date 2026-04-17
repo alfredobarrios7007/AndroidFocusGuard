@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="36dp"
+    android:background="@color/bg_blocker">
+
+    <!-- Big emoji cue -->
+    <TextView
+        android:id="@+id/tvEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⛔"
+        android:textSize="80sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Question / message text -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you really want to break your goal?\n\nIs what you&#8217;re about to do really worth it?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Phase 1: Yes / No buttons -->
+    <LinearLayout
+        android:id="@+id/layoutMainButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- NO — keep focus (prominent, green) -->
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="No — Stay Focused! 💪"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_start"
+            android:layout_marginBottom="14dp" />
+
+        <!-- YES — break focus (muted, secondary) -->
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Yes, let me in"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:backgroundTint="@color/btn_secondary" />
+
+    </LinearLayout>
+
+    <!-- Phase 2: Restart / Stay buttons -->
+    <LinearLayout
+        android:id="@+id/layoutSecondaryButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Restart the clock -->
+        <Button
+            android:id="@+id/btnRestartClock"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="🔄  Restart the Clock"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Stay with current time -->
+        <Button
+            android:id="@+id/btnStayClock"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="⏱️  Keep Current Time"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btn_secondary" />
+
+    </LinearLayout>
+
+</LinearLayout>
