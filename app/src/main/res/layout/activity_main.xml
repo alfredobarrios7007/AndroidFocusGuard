@@ -128,5 +128,14 @@
             android:backgroundTint="@color/orange_action"
             android:layout_marginBottom="32dp" />
 
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by ConejoSys 🐇"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="16dp" />
+
     </LinearLayout>
 </ScrollView>
