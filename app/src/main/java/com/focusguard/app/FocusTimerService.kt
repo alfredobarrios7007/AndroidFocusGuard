@@ -158,6 +158,7 @@ class FocusTimerService : Service() {
 
     private fun broadcastTick(remainingMillis: Long, finished: Boolean) {
         sendBroadcast(Intent(BROADCAST_TIMER_TICK).apply {
+            setPackage(packageName)
             putExtra(EXTRA_REMAINING_MILLIS, remainingMillis)
             putExtra(EXTRA_TIMER_FINISHED, finished)
         })
